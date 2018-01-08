@@ -3,11 +3,10 @@
 buat function to_roman isi parameter dengan 'integers'
 set num isi angka yg mewakili roman num
 set romawi isi dengan roman num dengan urutan yang sama dengan num
-buta base casenya integers<1
+buat base casenya integers>3000 dan integers<1
 looping num
-jika integer lebih besar atau sama dengan num i maka masukan nilai romawi i ke hasil
-kurangi nilai integer dengan nilai num i 
-return hasilnya
+saat integers >= num i ---> buat recursive dengan mereturn romawi i + function to_romawi(integers-num i)
+
 */
 function to_roman(integers){
     const num = [1000,900,500,400,100,90,50,40,10,9,5,4,1];

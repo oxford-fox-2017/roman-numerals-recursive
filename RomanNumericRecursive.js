@@ -2,8 +2,8 @@
 1. bikin dictionary buat roman dan numbernya 
 2. scan bagian indexnya untuk melihat parameter num ada di index yang mana 
 3. jika num nya >= index [number],  maka ganti numnya menjadi index[roman]
-4. setelah itu kurangi num - index[number], sisa num nya
-5. kembali lagi scan ke awal , dilanjutkan dengan parameter num yang tersisa , sampai abis  
+4. setelah itu kurangi num - index[number],pangiil function awal agar mengulang proses
+5. sampai di stopper jika num = 0 
 */
 function romanNumeral(num) {
     const index = [[1000,'M'],[900,'DM'],[500,'D'],[400,'CD'],[100,'C'],[90,'LC'],
